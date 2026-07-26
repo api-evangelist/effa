@@ -1,19 +1,44 @@
 aid: effa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/effa.png
 name: Effa
-description: Effa is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Effa is a sustainable consumer goods company that makes the world's first 100%
+  recyclable paper toothbrush, a disposable, plastic-free alternative to conventional plastic
+  toothbrushes aimed at hotels, airlines, and retail consumers. Founded in Ukraine by Dasha
+  and Ilya Kichuk and headquartered in San Francisco, California, the company supplies
+  eco-friendly personal care and amenity products to hospitality and travel clients, with
+  reported customers including Netflix and Radisson. Effa is backed by 500 Global and Startup
+  Wise Guys. Effa does not currently publish a public API, developer portal, or machine-readable
+  API specification; this profile tracks the company for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/effa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
+- startup-wise-guys
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-has-api: false
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Consumer Goods
+- Sustainability
+- Personal Care
+- Hospitality
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/effa-domain-security.yml
 - type: Website
   url: https://effa.one
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
